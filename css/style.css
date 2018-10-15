@@ -286,6 +286,10 @@ a.btn:hover {
   /* box-shadow: 3px 3px 15px #000; */
 }
 
+.tag__items {
+  padding: 0;
+}
+
 .tag__item {
   list-style: none;
   display: inline-block;
@@ -549,8 +553,31 @@ footer {
     font-weight: 300;
   }
 
+  /* Icon */
+
+  .fa-code {
+    display: inline-block;
+    margin: 0;
+  }
+
+  /* Project */
+
   .project__item {
     height: 175px;
     width: 100%;
+    padding: 0;
+  }
+
+  /* Button */
+  input[type='submit'],
+  input[type='reset'] {
+    background: transparent;
+    color: #fff;
+    width: 7.5rem;
+    border-radius: 20px;
+    border: 1px solid #fff;
+    outline: 0;
+    margin: 0;
+    transition: background-color 0.4s ease;
   }
 }
