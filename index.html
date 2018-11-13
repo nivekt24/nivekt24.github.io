@@ -6,8 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css">
+    <style>
 
+    </style>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css">
     <link rel="stylesheet" href="css/style.css">
     <title>Kevin Tran</title>
 </head>
@@ -48,36 +50,38 @@
 
     <div class="wrapper">
 
-
         <nav class="main-nav">
-            <div class="logo-container">
+            <div class="logo-container margin-bottom-sm">
                 <p class="logo margin-bottom-sm">Kevin Tran </p>
-                <span class="logo-b">Web Developer</span>
+                <span class="logo-b ">Web Developer</span>
             </div>
             <ul class="main-nav__items">
                 <li class="main-nav__item">
-                    <a href="#"><i class="fas fa-home"></i>Home</a>
+                    <a href="#"><i class="pr-2 fas fa-home "></i>Home</a>
                 </li>
                 <li class="main-nav__item">
-                    <a href="#bio"><i class="fas fa-user"></i>About</a>
+                    <a href="#bio"><i class="pr-2 fas fa-user "></i>About</a>
                 </li>
                 <li class="main-nav__item">
-                    <a href="#work"><i class="fas fa-folder"></i>Projects</a>
+                    <a href="#work"><i class="pr-2 fas fa-folder "></i>Projects</a>
                 </li>
                 <li class="main-nav__item">
-                    <a href="#contact"><i class="fas fa-envelope"></i>Contact</a>
+                    <a href="#contact"><i class="pr-2 fas fa-envelope "></i>Contact</a>
+                </li>
+                <li class="main-nav__item">
+                    <a href="src/Resume_TranK.pdf" target="_blank"><i class="pr-2 far fa-file-pdf"></i>Resume</a>
                 </li>
                 <div class="logo-container">
-                    <p class="logo-sm">Social Media</p>
+                    <p class="logo-sm pl-1">Social Media</p>
                 </div>
                 <li class="main-nav__item">
-                    <a href="https://github.com/kevintv08"><i class="fab fa-github"></i>GitHub</a>
+                    <a href="https://github.com/kevintv08" target="_blank"><i class="pr-2 fab fa-github "></i>GitHub</a>
                 </li>
                 <li class="main-nav__item">
-                    <a href="https://twitter.com/Kvt24"><i class="fab fa-twitter-square"></i>Twitter</a>
+                    <a href="https://twitter.com/Kvt24" target="_blank"><i class="pr-2 fab fa-twitter-square "></i>Twitter</a>
                 </li>
                 <li class="main-nav__item">
-                    <a href="https://stackoverflow.com/users/10501419/nartnivek"><i class="fab fa-stack-overflow"></i>Stack
+                    <a href="https://stackoverflow.com/users/10501419/nartnivek" target="_blank"><i class="pr-2 fab fa-stack-overflow "></i>Stack
                         Overflow</a>
                 </li>
 
@@ -90,18 +94,23 @@
 
         <!-- Main Section -->
         <header class="main-header">
+            <div class="bg-video">
+                <video class="bg-video__content" autoplay muted loop>
+                    <source src="img/computer.mp4" type="video/mp4">
+                    <source src="img/computer.webm" type="video/webm"> Your browser is not supported!
+                </video>
+            </div>
             <div class="hero-text-box">
                 <div class="margin-bottom-sm">
-                    <h1>
+                    <h1 class="heading-primary">
                         Kevin Tran
                     </h1>
                 </div>
                 <div class="margin-bottom-md">
-                    <h2>Web Developer in Southern California<h2>
-
+                    <h2 class="heading-primary--sub">Web Developer in Southern California<h2>
                 </div>
                 <div>
-                    <a href="products.html" class="btn">View My work</a>
+                    <a href="#work" class="btn btn-animated">View My work</a>
                 </div>
             </div>
         </header>
@@ -111,34 +120,41 @@
         <!-- Bio Section -->
 
         <section class="bio" id="bio">
-            <img src="img/profilepic.png" class="profile__pic">
+            <figure class="profile__pic--container">
+                <img src="img/profilepic.png" class="profile__pic">
+            </figure>
+
 
             <div class="info">
                 <h2 class="center-text margin-bottom-sm">
                     About Me
                 </h2>
                 <p>I am a self-taught and self-driven web developer. Originally, I graduated from California
-                    State University, Fullerton with a degree in Bachelor of Science in Health Science; although I
-                    enjoyed the science classes and having worked/interned little in the healthare field, I could not
+                    State University, Fullerton with a degree in Bachelor of Science in Health Science. Although I
+                    enjoyed the science classes and having worked/interned little in the healthcare field, I could not
                     see myself
                     working in for that field five years or ten years from now. I did some reflecting on myself and
                     remembered, as a child, I
                     always was observing and trying help my father with computer/appliance repairs.
-                    I knew I wanted to follow my father's footsteps, so I decided to work with my
-                    father, as a postgraduate, assisting him in computer services and other repair/installation servies
-                    such as computer repair,
-                    computer networking (i.e. routing and switching), appliance repairs, security camera installation,
-                    running electrical wires
-                    walls, and more. A year later, I have decided I wanted to do something do
-                    with
-                    computer science rather than IT. I started learning to code in Spring 2018 from Udemy online
-                    courses and have
-                    been doing it consistently for five months now. I have been loving every aspect of it; I try to
-                    stayed updated with the latest programming language,
-                    frameworks, libraries, etc. Here is going to be a list of the technologies skills I
+                    I knew I wanted to follow my father's footsteps, so I decided to work with my father, assisting him
+                    in computer services and other repair/installation services such as computer repair, computer
+                    networking (i.e. routing and switching), appliance repairs, security camera installation, running
+                    electrical wires through walls, and more. A year after of working with my father, I have decided I
+                    wanted to do something do with computer science rather than IT. So I started learning to code in
+                    Spring 2018 from Udemy online courses and have been doing it for five months now.
+                    Since then, I have been loving every aspect of it; I try to stay updated with the latest
+                    programming language, frameworks, libraries, etc. When I am not programming, I enjoy lifting
+                    weights,
+                    watching/playing basketball, going on food adventures with family/friends, etc. Here is going to be
+                    a list of the
+                    technologies
+                    skills I
                     have gained so far:</p>
-                <li>HTML/JS/CSS (HTML5, CSS3, Vanilla JS/ES6, jQuery, Bootstrap & Materialize)</li>
-                <li>Basic PHP</li>
+                <li>HTML/JS/CSS (HTML5, CSS3, Vanilla JS/ES6, DOM Manipulation, AJAX, JSON, jQuery, Bootstrap &
+                    Materialize)</li>
+                <li>PHP/OOP</li>
+                <li>Software: Microsoft Word, PowerPoint, Excel, Outlook, Adobe Photoshop, Visual Studio Code, Git,
+                    GitHub, Xampp, Gulp, NPM.</li>
             </div>
 
 
@@ -150,7 +166,7 @@
 
         <section class="project__one" id="work">
             <a href="https://kevintv08.github.io/all-might/" target="_blank" class="center-text margin-bottom-md"><img
-                    class="project__item p-1" src="img/project-1.png">
+                    class="project__item pl-1" src="img/project-1.png">
             </a>
 
             <div class="info">
@@ -158,14 +174,14 @@
                     All Might
                 </h2>
 
-                <p class="margin-bottom-sm">An e-commerce website mockup for madeup clothing brand, using:
+                <p class="margin-bottom-sm center-text">An e-commerce website mockup for madeup clothing brand, using:
                 </p>
 
-                <a href="https://github.com/KevinTV08/all-might" target="_blank"><i class="fas fa-code center-text margin-bottom-md"></i>
-                    View
-                    code</a>
+                <p class="center-text"><a href="https://github.com/KevinTV08/all-might" target="_blank"><i class="fas fa-code center-text margin-bottom-md"></i>
+                        View
+                        code</a></p>
 
-                <ul class="tag__items">
+                <ul class="tag__items center-text">
                     <li class="tag__item">HTML</li>
                     <li class="tag__item">CSS3</li>
                     <li class="tag__item">Responsive Grid System</li>
@@ -182,21 +198,21 @@
         <!-- Project Two Section -->
 
         <section class="project__two" id="work">
-            <a href="https://kevintv08.github.io/GLNP/" target="_blank" class="code__link center-text  margin-bottom-md">
-                <img class="project__item p-1" src="img/project-2.jpg"></a>
+            <a href="https://kevintv08.github.io/GLNP/" target="_blank" class="center-text  margin-bottom-md">
+                <img class="project__item pl-1" src="img/project-2.jpg"></a>
 
             <div class="info">
-                <h2 class="center-text margin-bottom-md">
+                <h2 class="center-text margin-bottom-md center-text">
                     Great Leaf National Park
                 </h2>
-                <p class="margin-bottom-sm">A tourism website mockup for a madeup national park, using:
+                <p class="margin-bottom-sm center-text">A tourism website mockup for a madeup national park, using:
 
                 </p>
-                <a href="https://github.com/KevinTV08/GLNP/" target="_blank"><i class="fas fa-code center-text margin-bottom-md"></i>
-                    View
-                    code</a>
+                <p class="center-text"><a href="https://github.com/KevinTV08/GLNP/" target="_blank"><i class="fas fa-code center-text margin-bottom-md"></i>
+                        View
+                        code</a></p>
 
-                <ul class="tag__items">
+                <ul class="tag__items center-text">
                     <li class="tag__item">HTML</li>
                     <li class="tag__item">CSS3</li>
                     <li class="tag__item">Flexbox</li>
@@ -210,51 +226,49 @@
         </section>
 
 
+        <!-- Project Three Section -->
+
+        <section class="project__three" id="work">
+            <a href="https://kevintv08.github.io/sign-up-form-UI/" target="_blank" class="center-text  margin-bottom-md">
+                <img class="project__item pl-1" src="img/project-3.png"></a>
+
+            <div class="info">
+                <h2 class="center-text margin-bottom-md center-text">
+                    Sign-Up Form UI
+                </h2>
+                <p class="margin-bottom-sm center-text">Audio book signup form UI with progress bar, using:
+
+                </p>
+                <p class="center-text"><a href="https://github.com/KevinTV08/sign-up-form-UI" target="_blank"><i class="fas fa-code center-text margin-bottom-md"></i>
+                        View
+                        code</a></p>
+
+                <ul class="tag__items center-text">
+                    <li class="tag__item">HTML</li>
+                    <li class="tag__item">CSS3</li>
+                    <li class="tag__item">JS</li>
+                    <li class="tag__item">Sass/SCSS</li>
+                </ul>
+
+            </div>
+
+
+        </section>
+
 
 
         <!-- Contact Section -->
 
         <section class="contact" id="contact">
+
             <div class="center-text margin-bottom-md">
                 <h2>Contact Me</h2>
             </div>
-            <p class="margin-bottom-md">ALERT: The message form below is under maintenance, so feel free to reach me at
-                kevinntrann@gmail.com, thank you.</p>
 
-            <div class="contact__wrapper">
+            <p class="margin-bottom-md">Feel free to reach me at
+                <a id="email" href="mailto:kevinntrann@gmail.com">kevinntrann@gmail.com.</a></p>
 
-
-                <div class="form">
-
-                    <div class="input-form">
-                        Name
-                        <div class="input">
-                            <input type="text" placeholder="Name" required>
-                        </div>
-
-                        Email
-                        <div class="input">
-                            <input type="text" placeholder="Email" required>
-                        </div>
-
-                    </div>
-                    <div class="inner-msg">
-                        Message
-                        <div class="msg">
-                            <textarea placeholder="Message" required></textarea>
-                        </div>
-                    </div>
-                    <div class="btn__wrapper">
-                        <input type="submit" value="Submit">
-                        <input type="reset" value="Reset">
-
-                    </div>
-                </div>
-                <div class="contact__info">
-
-                </div>
-
-            </div>
+            
 
 
         </section>
@@ -264,9 +278,10 @@
 
         <footer>
             <p class="icon__container margin-bottom-sm">
-                <a href="https://github.com/kevintv08"><i class="fab fa-github"></i></a>
-                <a href="https://twitter.com/Kvt24"><i class="fab fa-twitter-square"></i></a>
-                <a href="https://stackoverflow.com/users/10501419/nartnivek"><i class="fab fa-stack-overflow"></i></a>
+                    <a href="mailto:kevinntrann@gmail.com"> <i class="far fa-envelope pr-1"></i></a>
+                <a href="https://github.com/kevintv08" target="_blank"><i class="fab fa-github pr-1 "></i></a>
+                <a href="https://twitter.com/Kvt24" target="_blank"><i class="fab fa-twitter-square pr-1"></i></a>
+                <a href="https://stackoverflow.com/users/10501419/nartnivek" target="_blank"><i class="fab fa-stack-overflow pr-1"></i></a>
 
             </p>
             <p class="center-text">Copyright &copy; 2018 Kevin Tran</p>
@@ -277,6 +292,13 @@
     </div>
 
     <script src="js/main.js"></script>
+
+    <script>
+
+
+    </script>
+
+
 </body>
 
 </html>
