@@ -345,8 +345,7 @@ a.btn:hover {
 
 .profile__pic {
   display: flex;
-  height: 20rem;
-  width: 80%;
+  height: auto;
   border-radius: 50%;
   /* flex-direction: column; */
   vertical-align: center;
@@ -483,6 +482,12 @@ footer {
 
 /* Media Queries */
 
+@media screen (min-wdth: 992px) {
+  .profile__pic {
+  width: 80%;
+}
+}
+
 @media screen and (max-width: 991px) {
   /* Wrapper */
 
@@ -590,6 +595,7 @@ footer {
   /* Content */
 
   .profile__pic {
+    width: 40%;
   }
 
   .bio {
