@@ -482,7 +482,7 @@ footer {
 
 /* Media Queries */
 
-@media screen (min-wdth: 992px) {
+@media (min-width: 992px) {
   .profile__pic {
   width: 80%;
 }
