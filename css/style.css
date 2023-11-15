@@ -484,8 +484,8 @@ footer {
 
 @media (min-width: 992px) {
   .profile__pic {
-  width: 80%;
-}
+    width: 80%;
+  }
 }
 
 @media screen and (max-width: 991px) {
@@ -596,6 +596,7 @@ footer {
 
   .profile__pic {
     width: 40%;
+    margin: 20px 0 0 0;
   }
 
   .bio {
@@ -624,12 +625,8 @@ footer {
   }
 }
 
-@media screen and (max-width: 580px) {
+@media screen and (max-width: 768px) {
   /* Base & Typography  */
-
-  * {
-    /* overflow-x: hidden; */
-  }
 
   h1 {
     font-size: 2rem;
@@ -646,6 +643,12 @@ footer {
   .fa-code {
     display: inline-block;
     margin: 0;
+  }
+
+  /* Bio */
+
+  .info {
+    font-size: 0.75rem;
   }
 
   /* Project */
