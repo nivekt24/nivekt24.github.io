@@ -79,6 +79,10 @@ h2 {
   font-weight: 400;
 }
 
+h4 {
+  margin: 10px 0;
+}
+
 .heading-primary {
   display: block;
   font-size: 3rem;
@@ -109,8 +113,19 @@ a:hover {
 }
 
 /* Utility */
+ul {
+  list-style: none;
+}
+
 .center-text {
   text-align: center;
+}
+
+.center-container {
+  margin: 4rem auto;
+  max-width: 70rem;
+  padding: 0 20px;
+  width: 100%;
 }
 
 .margin-bottom-sm {
@@ -199,6 +214,10 @@ a:hover {
   padding-right: 0.35rem;
   z-index: 1000;
   width: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
 }
 
 .main-nav__items {
@@ -326,7 +345,7 @@ a.btn:hover {
   color: #fff;
   position: relative;
   display: grid;
-  grid-template-columns: 0.75fr 1fr;
+  /* grid-template-columns: 1fr; */
   grid-gap: 1rem;
   margin: 0 auto;
   overflow: hidden;
@@ -469,7 +488,7 @@ a.btn:hover {
 }
 
 /* Footer */
-footer {
+.footer {
   grid-area: footer;
   background: #0b0c10;
   margin: 0 auto;
@@ -484,7 +503,7 @@ footer {
 
 @media (min-width: 992px) {
   .profile__pic {
-    width: 80%;
+    width: 100px;
   }
 }
 
