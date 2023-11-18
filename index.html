@@ -16,37 +16,40 @@
 
 <body>
 
-    <!-- Toggle Container -->
 
-    <div class="toggle-container">
+    <div class="navigation">
+        <input type="checkbox" class="mobile-nav__checkbox" id="navi-toggle">
 
-        <button class="toggle-button" onclick="toggleNav()">
-            <i class="fa fa-bars fa-2x"></i>
-        </button>
+        <label for="navi-toggle" class="mobile-nav__button">
+            <span class="mobile-nav__icon">&nbsp;</span>
+        </label>
+
+
+
+        <nav class="mobile-nav">
+            <ul class="mobile-nav__list">
+                <li class="mobile-nav__item">
+                    <a href="#" class="mobile-nav__link">
+                        Home</a>
+                </li>
+                <li class="mobile-nav__item">
+                    <a href="#bio" class="mobile-nav__link">
+                        About Me</a>
+                </li>
+                <li class="mobile-nav__item">
+                    <a href="#work" class="mobile-nav__link">
+                        Projects</a>
+                </li>
+                <li class="mobile-nav__item">
+                    <a href="#contact" class="mobile-nav__link">
+                        Contacts</a>
+                </li>
+
+            </ul>
+        </nav>
+        <div class="mobile-nav__background"></div>
     </div>
 
-    <!-- Mobile Navigation -->
-
-    <div class="mobile-nav">
-        <ul class="mobile-nav__items">
-            <li class="mobile-nav__item">
-                <a href="#">Home</a>
-            </li>
-            <li class="mobile-nav__item">
-                <a href="#bio">About Me</a>
-            </li>
-            <li class="mobile-nav__item">
-                <a href="#work">Projects</a>
-
-            </li>
-            <li class="mobile-nav__item ">
-                <a href="#contact">Contact</a>
-            </li>
-            <!-- <li class="mobile-nav__item">
-                <a href="src/Resume_TranK.pdf" target="_blank">Resume</a>
-            </li> -->
-        </ul>
-    </div>
 
 
     <div class="wrapper">
@@ -143,7 +146,7 @@
 
         <!-- Bio Section -->
 
-        <section class="bio center-container" id="bio ">
+        <section class="bio center-container" id="bio">
 
 
 
