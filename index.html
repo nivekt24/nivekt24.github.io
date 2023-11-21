@@ -18,7 +18,7 @@
 
 
     <div class="navigation">
-        <input type="checkbox" class="mobile-nav__checkbox" id="navi-toggle">
+        <input type="checkbox" class="mobile-nav__checkbox" id="navi-toggle" />
 
         <label for="navi-toggle" class="mobile-nav__button">
             <span class="mobile-nav__icon">&nbsp;</span>
@@ -190,9 +190,12 @@
         <!-- Project One Section -->
 
         <section class="project__one" id="work">
-            <a href="https://nivekt24.github.io/all-might/" target="_blank" class="center-text margin-bottom-md"><img
-                    class="project__item pl-1" src="img/project-1.png">
-            </a>
+            <div>
+                <a href="https://nivekt24.github.io/all-might/" target="_blank"
+                    class="center-text margin-bottom-md"><img class="project__item" src="img/project-1.png">
+                </a>
+            </div>
+
 
             <div class="info">
                 <h2 class="center-text margin-bottom-md">
@@ -203,10 +206,12 @@
                     using:
                 </p>
 
-                <p class="center-text"><a href="https://github.com/nivekt24/all-might" target="_blank"><i
+                <p class="center-text">
+                    <a href="https://github.com/nivekt24/all-might" target="_blank"><i
                             class="fas fa-code center-text margin-bottom-md"></i>
                         View
-                        code</a></p>
+                        code</a>
+                </p>
 
                 <ul class="tag__items center-text text-xs">
                     <li class="tag__item">HTML</li>
@@ -224,8 +229,13 @@
         <!-- Project Two Section -->
 
         <section class="project__two" id="work">
-            <a href="https://nivekt24.github.io/GLNP/" target="_blank" class="center-text  margin-bottom-md">
-                <img class="project__item pl-1" src="img/project-2.jpg"></a>
+
+            <div>
+                <a href="https://nivekt24.github.io/GLNP/" target="_blank" class="center-text  margin-bottom-md">
+                    <img class="project__item " src="img/project-2.jpg">
+                </a>
+            </div>
+
 
             <div class="info">
                 <h2 class="center-text margin-bottom-md center-text">
@@ -256,8 +266,11 @@
         <!-- Project Three Section -->
 
         <section class="project__three" id="work">
-            <a href="https://nivekt24.github.io/sign-up-form-UI/" target="_blank" class="center-text  margin-bottom-md">
-                <img class="project__item pl-1" src="img/project-3.png"></a>
+            <div>
+                <a href="https://nivekt24.github.io/sign-up-form-UI/" target="_blank"
+                    class="center-text  margin-bottom-md">
+                    <img class="project__item" src="img/project-3.png"></a>
+            </div>
 
             <div class="info">
                 <h2 class="center-text margin-bottom-md center-text">
@@ -303,8 +316,9 @@
                 <input type="text" name="name" placeholder="Name" required>
                 <input type="email" name="email" placeholder="Email Address" required>
                 <input type="hidden" name="_next" value="https://ktran.gq/index.html">
-                <input type="text" name="message" placeholder="write your message here" required>
-                <button type="submit">Send</button>
+                <textarea rows="5" type="text" name="message" required>
+                </textarea>
+                <button type="submit">Submit</button>
             </form>
 
         </section>

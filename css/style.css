@@ -441,13 +441,53 @@ a.btn:hover {
 }
 
 .contact p a:hover {
-  color: #fff;
+  filter: brightness(110%);
 }
 
 .contact > h1 {
   color: #fff;
 }
 
+.contact form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  grid-gap: 1rem;
+}
+
+input,
+textarea {
+  font-family: inherit;
+  color: #000;
+  width: 100%;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+}
+
+textarea {
+  width: 100%;
+  line-height: 1.5;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  box-shadow: 1px 1px 1px #999;
+}
+
+button {
+  background-color: #8397ac;
+  font-family: inherit;
+  color: #fff;
+  letter-spacing: 0.3px;
+  width: 100%;
+  padding: 0.75rem 3rem;
+  border-radius: 0.5rem;
+  transition: all 0.3s ease-in-out;
+}
+
+button:hover {
+  filter: brightness(90%);
+}
 /* Footer */
 .footer {
   grid-area: footer;
@@ -518,8 +558,8 @@ a.btn:hover {
     width: 4rem;
     border-radius: 50%;
     position: fixed;
-    top: 3.5rem;
-    right: 3.5rem;
+    top: 1.5rem;
+    right: 1.5rem;
     background-color: #1c1e27;
     z-index: 1000;
     -webkit-transition: -webkit-transform 0.8s cubic-bezier(0.86, 0, 0.07, 1);
@@ -551,6 +591,7 @@ a.btn:hover {
     list-style: none;
     text-align: center;
     width: 100%;
+    padding: 0;
   }
 
   .active .mobile-nav {
@@ -656,8 +697,8 @@ a.btn:hover {
     height: 5rem;
     width: 5rem;
     position: fixed;
-    top: 3rem;
-    right: 3rem;
+    top: 1rem;
+    right: 1rem;
     border-radius: 50%;
     z-index: 2000;
     -webkit-box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.1);
@@ -668,10 +709,10 @@ a.btn:hover {
 
   /* Content */
 
-  .profile__pic {
+  /* .profile__pic {
     width: 40%;
     margin: 20px 0 0 0;
-  }
+  } */
 
   .bio {
     display: flex;
