@@ -262,13 +262,24 @@ ul {
   width: 100px;
 }
 
-/* Icon */
-.footer i {
-  font-size: 1.5rem;
+/* Social container */
+.social-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.social-container ul li {
+  display: flex;
 }
 
 .footer i {
+  font-size: 1.5rem;
   color: #fff;
+  transition: all 0.3s;
+}
+
+.footer i:hover {
+  filter: brightness(40%);
 }
 
 /* Header */
@@ -709,11 +720,6 @@ button:hover {
 
   /* Content */
 
-  /* .profile__pic {
-    width: 40%;
-    margin: 20px 0 0 0;
-  } */
-
   .bio {
     display: flex;
     flex-direction: column;
@@ -759,15 +765,8 @@ button:hover {
     font-size: 0.875rem;
   }
 
-  /* Icon */
-
-  .footer i {
+  Icon .footer i {
     font-size: 1rem;
-  }
-
-  .fa-code {
-    display: inline-block;
-    margin: 0;
   }
 
   /* Bio */
