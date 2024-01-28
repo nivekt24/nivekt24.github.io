@@ -5,7 +5,6 @@
 *::before,
 *::after {
   box-sizing: border-box;
-  /* padding: 0; */
   margin: 0;
 }
 
@@ -84,6 +83,10 @@ h4 {
 
 p {
   font-size: 0.875rem;
+  margin-top: 0px;
+  margin-right: 0px;
+  margin-bottom: 15px;
+  margin-left: 0px;
 }
 
 .text-xs {
@@ -98,17 +101,20 @@ p {
   font-size: 1rem;
 }
 
-.heading-primary {
+.heading-primary,
+.heading-primary--sub {
   display: block;
-  font-size: 3rem;
-  font-weight: 300;
-  animation-name: moveInleft;
   animation-duration: 1s;
   animation-timing-function: ease-out;
 }
 
+.heading-primary {
+  font-size: 3rem;
+  font-weight: 300;
+  animation-name: moveInleft;
+}
+
 .heading-primary--sub {
-  display: block;
   font-size: 1.75rem;
   font-weight: 500;
   animation: moveInRight 1s ease-out;
@@ -122,6 +128,7 @@ a {
 
 a:hover {
   color: #66fcf1;
+  transition: color 0.2s;
 }
 
 /* Utility */
@@ -367,19 +374,39 @@ a.btn:hover {
   padding: 2rem 4rem;
 }
 
-/* Project Section */
-
-.work {
-  display: block;
-  background: #fff;
-  margin: 0 auto;
-  position: relative;
-  grid-area: work;
-  color: #000;
-  width: 100%;
-  padding: 2rem 1.5rem 2rem 1.5rem;
-  /* box-shadow: 3px 3px 15px #000; */
+.skills-list li::before {
+  content: '▹';
+  position: absolute;
+  left: 0px;
+  color: var(--green);
+  /* font-size: var(--fz-sm); */
+  line-height: 12px;
 }
+
+ul.skills-list li {
+  position: relative;
+  margin-bottom: 10px;
+  padding-left: 20px;
+  font-family: var(--font-mono);
+  font-size: var(--fz-xs);
+}
+
+ul.skills-list {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(140px, 200px));
+  row-gap: 0px;
+  column-gap: 10px;
+  padding-top: 0px;
+  margin-top: 20px;
+  margin-right: 0px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  list-style-type: none;
+}
+
+/* Project Section */
 
 .project__one,
 .project__two,
@@ -434,7 +461,7 @@ a.btn:hover {
 
 .project__item:hover {
   opacity: 1;
-  transform: scale(0.75);
+  transform: scale(0.82);
 }
 
 /* Contact Section */
@@ -512,7 +539,6 @@ button:hover {
 }
 
 /* Media Queries */
-
 @media screen and (max-width: 991px) {
   html {
     font-size: 90%;
