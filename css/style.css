@@ -180,8 +180,7 @@ ul {
     ' nav project3 project3'
     'nav contact contact'
     'nav footer footer';
-
-  grid-template-columns: 200px 0.75fr 1fr;
+  grid-template-columns: 200px minmax(0, 1fr) minmax(0, 1fr); /* Simplified column widths */
   grid-template-rows: auto 1fr;
   position: relative;
   overflow: hidden;
